@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'FE2CM Docs'
+copyright = '2024, TheLivingPepsi'
+author = 'TheLivingPepsi'
 
-release = '0.1'
-version = '0.1.0'
+release = '59'
+version = '59.2'
 
 # -- General configuration
 
