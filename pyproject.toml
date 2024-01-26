@@ -4,3 +4,4 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "fe2cm-docs"
+dynamic = ["version", "description"]
