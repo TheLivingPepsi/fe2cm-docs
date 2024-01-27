@@ -8,10 +8,7 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches:
-      - "main"
-    paths:
-      - "docs/**"
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -31,19 +28,15 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: docs
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v3
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1" # Not needed with a .ruby-version file
+          ruby-version: '3.1' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 1 # Increment this number if you need to re-download cached gems
-          working-directory: "${{ github.workspace }}/docs"
+          cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
@@ -54,9 +47,7 @@ jobs:
           JEKYLL_ENV: production
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "docs/_site/"
+        uses: actions/upload-pages-artifact@v1
 
   # Deployment job
   deploy:
@@ -68,4 +59,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4.0.3
+        uses: actions/deploy-pages@v2
