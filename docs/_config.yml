@@ -5,3 +5,4 @@ theme: just-the-docs
 color_scheme: dark
 url: https://thelivingpepsi.github.io/fe2cm-docs/
 
+favicon_ico: "/assets/images/favicon.ico"
