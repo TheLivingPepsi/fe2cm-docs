@@ -10,7 +10,4 @@ This is a work in progress. Please see [the current docs here](https://docs.goog
 
 If you want to contribute, please head over to the [site repository][Site Repository] and create a pull request or issue!
 
-
-
-
 [Site Repository]: https://github.com/TheLivingPepsi/fe2cm-docs
