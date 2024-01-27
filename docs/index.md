@@ -1,5 +1,5 @@
 ---
-title: Home
+title: FE2CM Docs
 layout: home
 ---
 
