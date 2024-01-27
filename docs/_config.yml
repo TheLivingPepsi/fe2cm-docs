@@ -6,3 +6,6 @@ color_scheme: dark
 url: https://thelivingpepsi.github.io/fe2cm-docs/
 
 favicon_ico: "/assets/images/favicon.ico"
+
+aux_links:
+  Site Repository: https://github.com/TheLivingPepsi/fe2cm-docs
