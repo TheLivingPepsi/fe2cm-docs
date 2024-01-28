@@ -1,4 +1,7 @@
-# FE2CM + Timelines Documentation
+---
+title: FE2CM + Timelines Documentation
+layout: home
+---
 
 Welcome to the **[Flood Escape 2 Community Maps][FE2CM]** documentation! This is a site that aims to provide resources to assist with creation and development of your FE2 map.
 
